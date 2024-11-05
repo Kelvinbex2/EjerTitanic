@@ -1,13 +1,13 @@
 package es.etg.psp;
 
-import java.util.Random;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class Hilo  implements Runnable{
 
     @Override
     public void run() {
-        Random rand = new Random();
-        int time = 2000 + rand.nextInt(4000);
+        
+        int time = ThreadLocalRandom.current().nextInt(2000, 6001);
 
         try {
             Thread.sleep(time);
