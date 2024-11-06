@@ -43,7 +43,7 @@ public class GestorTitanic {
     } 
     public static void main(String[] args) {
         try {
-            crearBarcas();
+            //crearBarcas();
         } catch (Exception e) {
             // TODO: handle exception
         }

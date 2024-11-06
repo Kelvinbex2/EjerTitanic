@@ -1,14 +1,11 @@
 package es.etg.psp;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-
 import es.etg.psp.Entrada.Entrada;
 
 public class Titanic {
 
-    private static final String[] COMMANDO = { "java", "-cp", "bin", "es.etg.psp.Barca" };
+    private static final String[] COMMANDO = {"java", "es.etg.psp.GestorTitanic"};
 
     public static void main(String[] args) {
         try {
@@ -24,15 +21,6 @@ public class Titanic {
 
         try {
             Process process = Runtime.getRuntime().exec(COMMANDO);
-            StringBuilder build = new StringBuilder();
-
-            BufferedReader bf = new BufferedReader(new InputStreamReader(process.getInputStream()));
-            String line = Entrada.COMILLAS_SIMPLE;
-            while ((line = bf.readLine()) != null) {
-                // build.append(line).append(Entrada.TABULADOR);
-                System.err.println(line);
-            }
-
             exitVal = process.waitFor();
 
             if (exitVal == 0) {
