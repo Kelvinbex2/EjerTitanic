@@ -1,6 +1,5 @@
 package es.etg.psp;
 
-
 public class Barca {
     private int superviviente;
     private String nombre;
@@ -11,11 +10,19 @@ public class Barca {
     }
 
     public int getSuperviviente() {
-    return superviviente;
-}
+        return superviviente;
+    }
 
-public void setSuperviviente(int superviviente) {
-    this.superviviente = superviviente;
-}
+    public void setSuperviviente(int superviviente) {
+        this.superviviente = superviviente;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
 
 }
