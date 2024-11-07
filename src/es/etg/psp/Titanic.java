@@ -1,11 +1,11 @@
 package es.etg.psp;
 
+import es.etg.psp.entrada.Entrada;
 import java.io.IOException;
-import es.etg.psp.Entrada.Entrada;
 
 public class Titanic {
 
-    private static final String[] COMMANDO = {"java", "es.etg.psp.GestorTitanic"};
+    private static final String[] COMMANDO = {"java", "es/etg/psp/GestorTitanic"};
 
     public static void main(String[] args) {
         try {
