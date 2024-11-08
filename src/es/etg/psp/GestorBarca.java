@@ -8,7 +8,7 @@ import es.etg.psp.salida.TipoRegistro;
 import java.io.IOException;
 
 public class GestorBarca implements Salida,RegistroFactory{
-   private static final TipoRegistro tipoRegistro=TipoRegistro.TXT;
+   private static final TipoRegistro tipoRegistro=TipoRegistro.CONSOLA;
    private static final Registro registro =RegistroFactory.elegir(tipoRegistro);
 
 

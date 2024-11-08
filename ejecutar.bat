@@ -15,7 +15,7 @@ javac es\etg\psp\salida\RegistroFicheroTxt.java
 javac es\etg\psp\Barca.java
 javac es\etg\psp\GestorBarca.java
 javac es\etg\psp\Hilo.java
-javac es\etg\psp\Tiem.java
+javac es\etg\psp\Tiempo.java
 javac es\etg\psp\Titanic.java
 
 
