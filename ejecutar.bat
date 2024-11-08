@@ -12,14 +12,13 @@ javac es\etg\psp\salida\RegistroFichero.java
 javac es\etg\psp\salida\TipoRegistro.java
 javac es\etg\psp\salida\RegistroFicheroTxt.java
 
-javac es\etg\psp\Barca.java
-javac es\etg\psp\GestorBarca.java
-javac es\etg\psp\Hilo.java
+javac es\etg\psp\barca\Barca.java
+javac es\etg\psp\barca\GestorBarca.java
 javac es\etg\psp\Tiempo.java
-javac es\etg\psp\Titanic.java
+javac es\etg\psp\titanic\Titanic.java
 
 
-java  es/etg/psp/Titanic
+java  es/etg/psp/titanic/Titanic
 cd ..
 
 pause

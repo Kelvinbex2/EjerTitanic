@@ -1,4 +1,4 @@
-package es.etg.psp;
+package es.etg.psp.barca;
 
 public class Barca {
     private int superviviente;

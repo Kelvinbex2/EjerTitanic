@@ -1,5 +1,6 @@
-package es.etg.psp;
+package es.etg.psp.barca;
 
+import es.etg.psp.Tiempo;
 import es.etg.psp.entrada.Entrada;
 import es.etg.psp.fichero.Salida;
 import es.etg.psp.salida.Registro;
@@ -20,6 +21,7 @@ public class GestorBarca implements Salida,RegistroFactory{
         Salida.vaciar();
         String fechaAtual = Tiempo.date();
         registro.imprimir(fechaAtual);
+        int time = (int) (Math.random() * (6000 - 2000 + 1) + 2000);
         
         for (int i = 0; i < Entrada.NUM_POSICION; i++) {
             String nombreBarca = String.format(Entrada.NUM_BARCAS, i);
@@ -28,17 +30,13 @@ public class GestorBarca implements Salida,RegistroFactory{
             int rand = barca.getSuperviviente();
             numeroBarcas[i] = nombreBarca;
             
-            Hilo hilo = new Hilo();
-            Thread tiempo = new Thread(hilo);
-            tiempo.start();
-
+            Thread.sleep(time);
             String linea = Entrada.BARCAS + numeroBarcas[i] + Entrada.COMILLAS + rand;
            
-   
             registro.imprimir(linea);
             total += rand;
    
-            tiempo.join();
+            
             
         }
        
