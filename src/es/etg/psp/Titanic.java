@@ -21,6 +21,7 @@ public class Titanic {
 
         try {
             Process process = Runtime.getRuntime().exec(COMMANDO);
+            
             exitVal = process.waitFor();
 
             if (exitVal == 0) {
