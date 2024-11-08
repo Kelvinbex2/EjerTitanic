@@ -8,7 +8,7 @@ import es.etg.psp.salida.TipoRegistro;
 import java.io.IOException;
 
 public class GestorBarca implements Salida,RegistroFactory{
-   private static final TipoRegistro tipoRegistro=TipoRegistro.CONSOLA;
+   private static final TipoRegistro tipoRegistro=TipoRegistro.MD;
    private static final Registro registro =RegistroFactory.elegir(tipoRegistro);
 
 
@@ -17,10 +17,8 @@ public class GestorBarca implements Salida,RegistroFactory{
         String[] numeroBarcas = new String[Entrada.NUM_POSICION];
         int total = 0;
     
-        String fechaAtual = Tiem.date();
         Salida.vaciar();
         registro.imprimir(fechaAtual);
-       
         
         for (int i = 0; i < Entrada.NUM_POSICION; i++) {
             String nombreBarca = String.format(Entrada.NUM_BARCAS, i);
