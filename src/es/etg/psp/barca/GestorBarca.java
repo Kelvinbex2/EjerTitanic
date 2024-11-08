@@ -13,7 +13,7 @@ public class GestorBarca implements Salida,RegistroFactory{
    private static final Registro registro =RegistroFactory.elegir(tipoRegistro);
 
 
-   public static int crearBarcas() throws InterruptedException, IOException {
+   public static int Simular() throws InterruptedException, IOException {
        
         String[] numeroBarcas = new String[Entrada.NUM_POSICION];
         int total = 0;
@@ -51,7 +51,7 @@ public class GestorBarca implements Salida,RegistroFactory{
 
     public static void main(String[] args) {
         try {
-            crearBarcas();
+            Simular();
         } catch (Exception e) {
             System.out.println(e);
         }
