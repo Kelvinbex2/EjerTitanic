@@ -18,6 +18,7 @@ public class GestorBarca implements Salida,RegistroFactory{
         int total = 0;
     
         Salida.vaciar();
+        String fechaAtual = Tiem.date();
         registro.imprimir(fechaAtual);
         
         for (int i = 0; i < Entrada.NUM_POSICION; i++) {
