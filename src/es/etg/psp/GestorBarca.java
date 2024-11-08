@@ -17,7 +17,7 @@ public class GestorBarca implements Salida,RegistroFactory{
         String[] numeroBarcas = new String[Entrada.NUM_POSICION];
         int total = 0;
     
-
+        String fechaAtual = Tiem.date();
         Salida.vaciar();
         registro.imprimir(fechaAtual);
        
@@ -46,9 +46,7 @@ public class GestorBarca implements Salida,RegistroFactory{
 
         String msgtotal = Entrada.MSG_TOTAL;
         String consola = String.format(msgtotal, total);
-
-    
-       registro.imprimir(consola);
+        registro.imprimir(consola);
         return total;
         
     } 
