@@ -7,7 +7,7 @@ import es.etg.psp.salida.RegistroFactory;
 import es.etg.psp.salida.TipoRegistro;
 import java.io.IOException;
 
-public class GestorTitanic implements Salida,RegistroFactory{
+public class GestorBarca implements Salida,RegistroFactory{
    private static final TipoRegistro tipoRegistro=TipoRegistro.CONSOLA;
    private static final Registro registro =RegistroFactory.elegir(tipoRegistro);
 
@@ -52,12 +52,14 @@ public class GestorTitanic implements Salida,RegistroFactory{
         return total;
         
     } 
+
+
     public static void main(String[] args) {
         try {
-
             crearBarcas();
         } catch (Exception e) {
-            // TODO: handle exception
+            System.out.println(e);
         }
     }
+    
 }

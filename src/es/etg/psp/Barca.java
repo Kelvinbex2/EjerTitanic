@@ -25,4 +25,26 @@ public class Barca {
         this.nombre = nombre;
     }
 
+    
+    
+    // @Override
+    // public String toString() {
+    //     return "superviviente=" + getSuperviviente();
+    // }
+       
+
+    
+
+    
+    //   public static void main(String[] args) {
+        
+    //     int barca = 1 + (int) +(Math.random() * 100);
+       
+    //     System.out.println(barca);
+
+
+    //   }
+      
+        
+    
 }
