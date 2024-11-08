@@ -16,7 +16,7 @@ javac es\etg\psp\Hilo.java
 javac  es\etg\psp\Tiem.java
 javac  es\etg\psp\Titanic.java
 
-java  es/etg/psp/Titanic
+Rem java  es/etg/psp/Titanic
 cd ..
 
 pause
