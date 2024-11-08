@@ -9,7 +9,7 @@ import java.io.IOException;
 public interface Salida {
 
     
-    public  static File fichero = new File(Entrada.NOMBRE_FICHERO);
+    public  static File fichero = new File(Entrada.NOMBRE_TXT);
 
     
      static void escribir(String datos)  {

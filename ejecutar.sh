@@ -1,4 +1,5 @@
 #!/bin/bash
+# no lo he probado si funciona 
 cd src
 
 javac es/etg/psp/entrada/Entrada.java

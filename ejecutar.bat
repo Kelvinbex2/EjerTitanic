@@ -10,13 +10,16 @@ javac es\etg\psp\salida\RegistroConsola.java
 javac es\etg\psp\salida\RegistroFactory.java
 javac es\etg\psp\salida\RegistroFichero.java
 javac es\etg\psp\salida\TipoRegistro.java
-javac  es\etg\psp\Barca.java
-javac  es\etg\psp\GestorBarca.java
-javac es\etg\psp\Hilo.java
-javac  es\etg\psp\Tiem.java
-javac  es\etg\psp\Titanic.java
+javac es\etg\psp\salida\RegistroFicheroTxt.java
 
-Rem java  es/etg/psp/Titanic
+javac es\etg\psp\Barca.java
+javac es\etg\psp\GestorBarca.java
+javac es\etg\psp\Hilo.java
+javac es\etg\psp\Tiem.java
+javac es\etg\psp\Titanic.java
+
+
+java  es/etg/psp/Titanic
 cd ..
 
 pause

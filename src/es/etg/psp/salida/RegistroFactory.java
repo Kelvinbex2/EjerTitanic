@@ -2,15 +2,17 @@ package es.etg.psp.salida;
 
 public interface RegistroFactory {
     
-    static Registro elegir(TipoRegistro tipo){
+   public  static Registro elegir(TipoRegistro tipo){
 
         if(tipo==TipoRegistro.CONSOLA){
 
             return new RegistroConsola();
 
-        }else{
+        }  if(tipo ==TipoRegistro.MD){
 
             return  new RegistroFichero();
+        }else{
+            return new RegistroFicheroTxt();
         }
            
 

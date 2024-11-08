@@ -5,7 +5,7 @@ import java.io.IOException;
 
 public class Titanic {
 
-    private static final String[] COMMANDO = {"java", "es/etg/psp/GestorTitanic"};
+    private static final String[] COMMANDO = {"java", "es/etg/psp/GestorBarca"};
 
     public static void main(String[] args) {
         try {
