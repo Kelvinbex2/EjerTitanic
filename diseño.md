@@ -1,4 +1,16 @@
 # Noma kelvin obamedo
+
+## Analisis
+
+  ### <b>Requisitos funcionales</b>
+  - Generación de Barcas Salvavidas
+  - Asignación de Pasajeros
+  - Lanzamiento de Barcas
+  - Simulación del Tiempo de Espera
+
+
+### <b>Requisitos no funcionales</b>
+- Cada barca debe liberarse de manera independiente
 ## Diseño Actual
 
 ``` plantuml
@@ -92,7 +104,7 @@ GestorBarca..|> RegistroFactory
 
 ```
 
-## Diseño quitando factorias 
+## Diseño quitando factorias y ficheros
 
 ``` plantuml
 
